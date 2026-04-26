@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Para que salga el sol — Cafetería</title>
+    <meta name="description" content="Para que salga el sol — café de especialidad, desayunos y postres en Guadalajara, Jalisco." />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/styles.css" />
+  </head>
+  <body>
+    <!-- NAVBAR -->
+    <header class="navbar" id="navbar">
+      <div class="nav-container">
+        <a href="#inicio" class="brand">
+          <span class="brand-mark">☀</span>
+          <span class="brand-text">
+            <span class="brand-title">Para que salga</span>
+            <span class="brand-subtitle">el sol</span>
+          </span>
+        </a>
+
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Abrir menú"
+          aria-expanded="false"
+        >
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+
+        <nav class="nav-links" id="navLinks">
+          <a href="#inicio">Inicio</a>
+          <a href="#servicios">Servicios</a>
+          <a href="#galeria">Galería</a>
+          <a href="#contacto">Contacto</a>
+        </nav>
+      </div>
+    </header>
+
+    <!-- HERO / BIENVENIDA -->
+    <section class="hero" id="inicio">
+      <div class="hero-image">
+        <img
+          src="./images/foto-mesa.png"
+          alt="Mesa con café frío, latte y postre en Para que salga el sol"
+        />
+        <div class="hero-overlay"></div>
+      </div>
+      <div class="hero-content">
+        <p class="eyebrow">Bienvenido</p>
+        <h1>Donde cada taza<br />cuenta una historia.</h1>
+        <p class="hero-subtitle">
+          Café de especialidad, desayunos artesanales y postres caseros en el
+          corazón de Guadalajara. Un rincón pensado para disfrutar sin prisa.
+        </p>
+        <div class="hero-cta">
+          <a href="#servicios" class="btn btn-primary">Ver carta</a>
+          <a href="#contacto" class="btn btn-ghost">Contáctanos</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section" id="servicios">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Nuestros servicios</p>
+          <h2>Hecho con calma, servido con cariño.</h2>
+          <p class="section-sub">
+            Selección cuidada de café, desayunos y postres preparados cada día
+            con ingredientes locales.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="./images/foto-bebida-fria.jpg"
+                alt="Bebida fría especial de la casa"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Café de Especialidad</h3>
+              <p>
+                Granos seleccionados de origen, tostados artesanalmente.
+                Espresso, capuchino, latte, cold brew y métodos de filtrado.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="./images/foto-pan-latte.jpg"
+                alt="Pan artesanal con latte"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Desayunos</h3>
+              <p>
+                Tostadas artesanales, huevos, pan recién horneado, jugos
+                naturales y bowls de frutas para empezar el día con energía.
+              </p>
+            </div>
+          </article>
+
+          <article class="card">
+            <div class="card-image">
+              <img
+                src="./images/foto-cafe-chocolate.jpg"
+                alt="Café con trozos de chocolate"
+              />
+            </div>
+            <div class="card-body">
+              <h3>Postres</h3>
+              <p>
+                Tartas caseras, brownies, cheesecake y nuestra famosa torta de
+                chocolate. Acompañan perfecto cualquier café.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="section section-muted" id="galeria">
+      <div class="container">
+        <div class="section-head">
+          <p class="eyebrow">Galería</p>
+          <h2>Un vistazo a nuestro rincón.</h2>
+          <p class="section-sub">
+            Momentos, aromas y sabores que se viven en Para que salga el sol.
+          </p>
+        </div>
+
+        <div class="gallery">
+          <figure class="gallery-item">
+            <img src="./images/foto-mesa.png" alt="Mesa con café, latte y postre" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./images/foto-pan-latte.jpg" alt="Pan artesanal con latte" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./images/foto-bebida-fria.jpg" alt="Bebida fría de la casa" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./images/foto-cafe-chocolate.jpg" alt="Café con trozos de chocolate" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./images/cafe-gallery-1.jpg" alt="Barista preparando café" />
+          </figure>
+          <figure class="gallery-item">
+            <img src="./images/cafe-gallery-3.jpg" alt="Mesa de madera con café y libro" />
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACTO -->
+    <section class="section" id="contacto">
+      <div class="container contact-grid">
+        <div class="contact-info">
+          <p class="eyebrow">Contacto</p>
+          <h2>Escríbenos.</h2>
+          <p class="section-sub">
+            ¿Tienes una consulta, quieres reservar una mesa o coordinar un
+            evento? Cuéntanos y te respondemos pronto.
+          </p>
+
+          <ul class="info-list">
+            <li><strong>Dirección:</strong> C. Quebrada 3784 B, Loma Bonita, 45085 Guadalajara, Jal.</li>
+            <li><strong>Teléfono:</strong> +52 33 1234 5678</li>
+            <li><strong>Horario:</strong> Lun a Dom · 8:00 — 21:00</li>
+          </ul>
+        </div>
+
+        <form class="contact-form" id="contactForm" novalidate>
+          <div class="field">
+            <label for="nombre">Nombre</label>
+            <input
+              type="text"
+              id="nombre"
+              name="nombre"
+              placeholder="Tu nombre"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="correo">Correo</label>
+            <input
+              type="email"
+              id="correo"
+              name="correo"
+              placeholder="tu@correo.com"
+              required
+            />
+          </div>
+
+          <div class="field">
+            <label for="mensaje">Mensaje</label>
+            <textarea
+              id="mensaje"
+              name="mensaje"
+              rows="5"
+              placeholder="¿En qué podemos ayudarte?"
+              required
+            ></textarea>
+          </div>
+
+          <button type="submit" class="btn btn-primary btn-block">
+            Enviar mensaje
+          </button>
+        </form>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-grid">
+        <div>
+          <p class="footer-brand">Para que salga el sol</p>
+          <p class="footer-tag">Donde cada taza cuenta una historia.</p>
+          <p class="footer-tag">C. Quebrada 3784 B, Loma Bonita, 45085 Guadalajara, Jal.</p>
+        </div>
+        <div class="footer-student">
+          <p><strong>Alumno:</strong> Marcos Leonel Murillo Villegas</p>
+          <p><strong>Profesor:</strong> Zeus Emanuel Gutiérrez Cobián</p>
+          <p><strong>Materia:</strong> Desarrollo Web · 2026</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Para que salga el sol · Trabajo práctico académico.</p>
+      </div>
+    </footer>
+
+    <script type="module" src="./src/main.js"></script>
+  </body>
+</html>
